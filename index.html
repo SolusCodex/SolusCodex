@@ -88,33 +88,34 @@
         </div>
         <!-- Navbar & Hero End -->
 
+        
 
         <!-- Feature Start -->
         <div class="container-xxl py-5">
             <div class="container py-5 px-lg-5">
                 <div class="row g-4">
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="col-lg-6 wow fadeInUp" id="online-store" data-wow-delay="0.1s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-mail-bulk text-primary mb-4"></i>
                             <h5 class="mb-3">Online Stores</h5>
                             <p class="m-0">Boost your business with an Online Store. Expand your customer reach, streamline sales, and embrace the convenience of online shopping. Take your business to new heights with a powerful online presence</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="col-lg-6 wow fadeInUp" id="seo" data-wow-delay="0.3s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-search text-primary mb-4"></i>
                             <h5 class="mb-3">Search Engine Optimization</h5>
                             <p class="m-0">Maximize your online presence with Search Engine Optimization (SEO). Boost visibility, drive traffic, and outshine the competition. Unleash the power of SEO to grow your business</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-6 wow fadeInUp" id="web-development" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
                             <h5 class="mb-3">Web Development</h5>
                             <p class="m-0">Create an impressive online presence with a Website. Engage your audience, unlock growth, and make your mark in the digital world</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="col-lg-6 wow fadeInUp" id="web-scraping" data-wow-delay="0.5s">
                         <div class="feature-item bg-light rounded text-center p-4">
                             <i class="fa fa-3x fa-laptop-code text-primary mb-4"></i>
                             <h5 class="mb-3">Web Scraping</h5>
@@ -124,6 +125,31 @@
                 </div>
             </div>
         </div>
+
+
+        <style>
+            .col-lg-6.wow.fadeInUp:hover {
+                cursor: pointer;
+            }
+        </style>
+
+
+        <script defer>
+            document.getElementById("online-store").addEventListener("click", (event) => {
+                window.location = "/services/onlineStore.html"
+            });
+            document.getElementById("seo").addEventListener("click", (event) => {
+                window.location = "/services/seo.html"
+            });
+            document.getElementById("web-development").addEventListener("click", (event) => {
+                window.location = "/services/webDevelopment.html"
+            });
+            document.getElementById("web-scraping").addEventListener("click", (event) => {
+                window.location = "/services/webScraping.html"
+            })
+        </script>
+
+
         <!-- Feature End -->
 
 
